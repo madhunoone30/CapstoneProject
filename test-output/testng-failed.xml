@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.RegisterPageTest">
+      <class name="TestCases.AddToCartPageTest">
         <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="registerNewUserUsingRegularPOM"/>
+          <include name="teardownClass"/>
+          <include name="addCatToCartAndReturnHome"/>
+          <include name="setupClass"/>
+          <include name="addDogToCartAndReturnHome"/>
+          <include name="addBirdToCartAndReturnHome"/>
         </methods>
-      </class> <!-- TestCases.RegisterPageTest -->
+      </class> <!-- TestCases.AddToCartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,7 +1,5 @@
 package StepDef;
 
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
 import Pages.LoginpPage;
 import io.cucumber.java.en.*;
 
@@ -12,6 +10,9 @@ import org.openqa.selenium.support.ui.*;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 
 import static org.testng.Assert.*;
 
@@ -88,7 +89,7 @@ public class LoginSteps extends JPetBaseClass {
 
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Sign Out")));
 
-            screenShot("Page after logged in with Valid Credentials");
+            screenShot("Login valid Credentials");
 
             boolean isLoggedIn = driver.findElement(By.linkText("Sign Out")).isDisplayed();
 
@@ -103,7 +104,7 @@ public class LoginSteps extends JPetBaseClass {
             test.log(Status.FAIL, "Login failed! Sign Out button not found: " + ae.getMessage());
             throw ae;  // Optional: Re-throw if you want the test to fail
         } catch (Exception e) {
-            screenShot("Exception during Login");
+            screenShot("Login Error during Exception");
             test.log(Status.FAIL, "Exception occurred during login validation: " + e.getMessage());
             e.printStackTrace();
         }
@@ -120,7 +121,7 @@ public class LoginSteps extends JPetBaseClass {
             WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(
                     By.xpath("//ul[@class='messages']//li")));
 
-            screenShot("Page after logged in with Invalid Credentials");
+            screenShot("Login Invalid Credentials");
 
             assertTrue(errorMsg.isDisplayed(), "Error message not displayed!");
 
@@ -134,7 +135,7 @@ public class LoginSteps extends JPetBaseClass {
             System.out.println("Error message displayed: " + actualMessage);
 
         } catch (AssertionError ae) {
-            screenShot("Error message validation failed");
+            screenShot("Error message did not pass validation");
             test.log(Status.FAIL, "Assertion failed: " + ae.getMessage());
             throw ae;
         } catch (Exception e) {

@@ -11,8 +11,8 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 import Pages.UpdateCartPF;
 
 public class UpdateCartTest extends JPetBaseClass {
@@ -71,7 +71,7 @@ public class UpdateCartTest extends JPetBaseClass {
         Thread.sleep(1000);
 
         // Take screenshot after cart update and removal
-        screenShot("Page after update and removal in cart");
+        screenShot("Cart Update And Removal");
 
         // Final Pass log in ExtentReport
         test.log(Status.PASS, "Cart updated successfully - quantities modified and item removed");

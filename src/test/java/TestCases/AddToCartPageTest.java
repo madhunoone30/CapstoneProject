@@ -12,8 +12,8 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 import Pages.AddToCartPage;
 import Pages.LoginpPage;
 
@@ -92,7 +92,7 @@ public class AddToCartPageTest extends JPetBaseClass {
         test.log(Status.INFO, "Added Amazon Parrot to cart");
 
         // Take screenshot after adding item to cart
-        screenShot("Page after Bird added to cart");
+        screenShot("Cart Bird Added");
 
         Thread.sleep(1000);
 
@@ -127,7 +127,7 @@ public class AddToCartPageTest extends JPetBaseClass {
         test.log(Status.INFO, "Added Manx Cat to cart");
 
         // Take screenshot after adding item to cart
-        screenShot("Page after Cat added to cart");
+        screenShot("Cart Cat Added");
 
         Thread.sleep(1000);
 
@@ -162,7 +162,7 @@ public class AddToCartPageTest extends JPetBaseClass {
         test.log(Status.INFO, "Added Dalmation to cart");
 
         // Take screenshot after adding item to cart
-        screenShot("Page after Dog added to cart");
+        screenShot("Cart Dog Added");
 
         Thread.sleep(1000);
 

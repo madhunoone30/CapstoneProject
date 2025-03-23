@@ -16,9 +16,9 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 import Pages.CheckOutPagePF;
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
 
 public class CheckOutPageTest extends JPetBaseClass{
 	 WebDriver driver;
@@ -95,7 +95,7 @@ public class CheckOutPageTest extends JPetBaseClass{
 	    	 test.log(Status.INFO, "Clicked on Confirm Order button");
 
 	         // Step 8: Screenshot after submission
-	         screenShot("Page after Submission of Order");
+	         screenShot("Order Submission");
 	         test.log(Status.INFO, "Captured screenshot after submitting order");
 	        		 
 	    	WebElement OrderConfirmMsg = driver.findElement(By.xpath("//ul[@class='messages']"));

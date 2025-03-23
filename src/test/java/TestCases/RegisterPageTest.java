@@ -13,8 +13,8 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 import Pages.RegisterPage;
 
 public class RegisterPageTest extends JPetBaseClass {
@@ -52,7 +52,7 @@ public class RegisterPageTest extends JPetBaseClass {
         wait.until(ExpectedConditions.elementToBeClickable(signInLink)).click();
         Thread.sleep(500);
 
-        screenShot("SignPage");
+        screenShot("SignInPage");
         test.log(Status.INFO, "Captured Sign In page screenshot");
 
         // Click Register button
@@ -90,7 +90,7 @@ public class RegisterPageTest extends JPetBaseClass {
 
         // Scroll to submit button and take screenshot
         scrollToElement(registerPage.getSubmit());
-        screenShot("FilledRegistrationPage");
+        screenShot("Registration Form Filled");
         test.log(Status.INFO, "Captured filled Registration form screenshot");
 
         // Submit registration form
@@ -100,7 +100,7 @@ public class RegisterPageTest extends JPetBaseClass {
         Thread.sleep(2000); // Better to replace with wait for element, keeping it for now
 
         // Capture page after submission
-        screenShot("PostRegistrationPage");
+        screenShot("Post Registration");
         test.log(Status.INFO, "Captured post-registration confirmation page screenshot");
 
         // Verify successful registration

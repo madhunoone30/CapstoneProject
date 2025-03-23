@@ -1,109 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-22T22:13:56 IST" name="Default suite" finished-at="2025-03-22T22:13:56 IST" duration-ms="115">
+  <suite started-at="2025-03-23T16:09:58 IST" name="Suite" finished-at="2025-03-23T16:11:32 IST" duration-ms="93796">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyRunner.LoginStepsRunnerTestng@33c911a1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-22T22:13:56 IST" name="Default test" finished-at="2025-03-22T22:13:56 IST" duration-ms="115">
+    <test started-at="2025-03-23T16:09:58 IST" name="Test" finished-at="2025-03-23T16:11:32 IST" duration-ms="93796">
+      <class name="TestCases.UpdateCartTest">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:TestCases.UpdateCartTest@707194ba]" started-at="2025-03-23T16:11:14 IST" name="setupClass" finished-at="2025-03-23T16:11:14 IST" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method signature="updateCartTest()[pri:0, instance:TestCases.UpdateCartTest@707194ba]" started-at="2025-03-23T16:11:14 IST" name="updateCartTest" finished-at="2025-03-23T16:11:21 IST" duration-ms="7011" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCartTest -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestCases.UpdateCartTest@707194ba]" started-at="2025-03-23T16:11:21 IST" name="tearDownClass" finished-at="2025-03-23T16:11:21 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestCases.UpdateCartTest -->
       <class name="TestCases.RegisterPageTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.RegisterPageTest@6150c3ec]" started-at="2025-03-22T22:13:56 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1742661836648" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\Madhuri\AppData\Local\Temp\testng-eclipse--1143476551\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\Madhuri\AppData\Local\Temp\testng-eclipse--1143476551\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.RegisterPageTest@3bd82cf5]" started-at="2025-03-23T16:09:58 IST" name="setup" finished-at="2025-03-23T16:10:04 IST" duration-ms="5473" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="registerNewUserUsingRegularPOM()[pri:0, instance:TestCases.RegisterPageTest@6150c3ec]" started-at="2025-03-22T22:13:56 IST" name="registerNewUserUsingRegularPOM" finished-at="2025-03-22T22:13:56 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\Madhuri\AppData\Local\Temp\testng-eclipse--1143476551\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
-in C:\Users\Madhuri\AppData\Local\Temp\testng-eclipse--1143476551\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:267)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:306)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="registerNewUserUsingRegularPOM()[pri:0, instance:TestCases.RegisterPageTest@3bd82cf5]" started-at="2025-03-23T16:10:04 IST" name="registerNewUserUsingRegularPOM" finished-at="2025-03-23T16:10:14 IST" duration-ms="10708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerNewUserUsingRegularPOM -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.RegisterPageTest@6150c3ec]" started-at="2025-03-22T22:13:56 IST" name="tearDown" finished-at="2025-03-22T22:13:56 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.RegisterPageTest@3bd82cf5]" started-at="2025-03-23T16:10:14 IST" name="tearDown" finished-at="2025-03-23T16:10:18 IST" duration-ms="3482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- TestCases.RegisterPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="TestCases.CheckOutPageTest">
+        <test-method is-config="true" signature="setupClass()[pri:0, instance:TestCases.CheckOutPageTest@1190200a]" started-at="2025-03-23T16:11:21 IST" name="setupClass" finished-at="2025-03-23T16:11:22 IST" duration-ms="1560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method signature="CheckOut()[pri:0, instance:TestCases.CheckOutPageTest@1190200a]" started-at="2025-03-23T16:11:22 IST" name="CheckOut" finished-at="2025-03-23T16:11:29 IST" duration-ms="6361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckOut -->
+        <test-method is-config="true" signature="close()[pri:0, instance:TestCases.CheckOutPageTest@1190200a]" started-at="2025-03-23T16:11:29 IST" name="close" finished-at="2025-03-23T16:11:32 IST" duration-ms="3026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- TestCases.CheckOutPageTest -->
+      <class name="MyRunner.LoginStepsRunnerTestng">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:MyRunner.LoginStepsRunnerTestng@33c911a1]" started-at="2025-03-23T16:10:18 IST" name="setUpClass" finished-at="2025-03-23T16:10:19 IST" duration-ms="798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@60b553f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyRunner.LoginStepsRunnerTestng@33c911a1]" started-at="2025-03-23T16:10:19 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-23T16:10:32 IST" duration-ms="13708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to JPetStore"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:MyRunner.LoginStepsRunnerTestng@33c911a1]" started-at="2025-03-23T16:10:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-23T16:10:45 IST" duration-ms="12878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to JPetStore"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:MyRunner.LoginStepsRunnerTestng@33c911a1]" started-at="2025-03-23T16:10:45 IST" name="tearDownClass" finished-at="2025-03-23T16:10:45 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- MyRunner.LoginStepsRunnerTestng -->
+      <class name="TestCases.AddToCartPageTest">
+        <test-method is-config="true" signature="setupClass(java.lang.String)[pri:0, instance:TestCases.AddToCartPageTest@75db5df9]" started-at="2025-03-23T16:10:45 IST" name="setupClass" finished-at="2025-03-23T16:10:53 IST" duration-ms="7805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupClass -->
+        <test-method signature="addBirdToCartAndReturnHome()[pri:1, instance:TestCases.AddToCartPageTest@75db5df9]" started-at="2025-03-23T16:10:53 IST" name="addBirdToCartAndReturnHome" finished-at="2025-03-23T16:11:00 IST" duration-ms="7037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBirdToCartAndReturnHome -->
+        <test-method signature="addCatToCartAndReturnHome()[pri:2, instance:TestCases.AddToCartPageTest@75db5df9]" started-at="2025-03-23T16:11:00 IST" name="addCatToCartAndReturnHome" finished-at="2025-03-23T16:11:07 IST" duration-ms="7023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCatToCartAndReturnHome -->
+        <test-method signature="addDogToCartAndReturnHome()[pri:3, instance:TestCases.AddToCartPageTest@75db5df9]" started-at="2025-03-23T16:11:07 IST" name="addDogToCartAndReturnHome" finished-at="2025-03-23T16:11:14 IST" duration-ms="6667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addDogToCartAndReturnHome -->
+        <test-method is-config="true" signature="teardownClass()[pri:0, instance:TestCases.AddToCartPageTest@75db5df9]" started-at="2025-03-23T16:11:14 IST" name="teardownClass" finished-at="2025-03-23T16:11:14 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownClass -->
+      </class> <!-- TestCases.AddToCartPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

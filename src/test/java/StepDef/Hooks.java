@@ -1,11 +1,12 @@
 package StepDef;
 
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import java.time.Duration;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 
 public class Hooks extends JPetBaseClass {
 

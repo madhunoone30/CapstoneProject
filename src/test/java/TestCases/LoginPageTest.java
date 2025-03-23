@@ -14,8 +14,8 @@ import org.testng.annotations.*;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import CommonFiles.ExtentReport;
-import CommonFiles.JPetBaseClass;
+import GeneralFiles.ExtentReport;
+import GeneralFiles.JPetBaseClass;
 import Pages.LoginpPage;
 
 
